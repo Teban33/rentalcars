@@ -1,153 +1,244 @@
 const cars = [
   {
-    id: 'land-cruiser',
-    name: 'Toyota Land Cruiser',
-    model: 'Hardtop · 4x4',
+    id: 'land-cruiser-v8',
+    name: 'Toyota Land Cruiser V8',
+    shortName: 'Land Cruiser V8',
+    model: 'V8 · 4WD',
     category: 'suv',
     tag: 'Safari favourite',
     passengers: 7,
-    transmission: 'Manual',
+    transmission: 'Automatic',
     fuel: 'Diesel',
-    price: 25000,
-    image: 'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=1000&q=85',
-    alt: 'Toyota-style off-road 4x4 ready for a safari',
-    description: 'Built for wide-open landscapes and the road less travelled. This capable 4x4 brings space, comfort and confidence to every safari.'
+    price: 650000,
+    image: 'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=1100&q=85',
+    alt: 'Premium off-road SUV prepared for a safari adventure',
+    description: 'A spacious, confident 4×4 built for the long way around. The Land Cruiser V8 makes rough roads, long drives and big safari plans feel a little easier.'
+  },
+  {
+    id: 'land-cruiser-prado',
+    name: 'Toyota Land Cruiser Prado',
+    shortName: 'Land Cruiser Prado',
+    model: 'TX · 4WD',
+    category: 'suv',
+    tag: 'Made for exploring',
+    passengers: 7,
+    transmission: 'Automatic',
+    fuel: 'Diesel',
+    price: 480000,
+    image: 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1100&q=85',
+    alt: 'Rugged 4x4 SUV on a scenic road',
+    description: 'Comfortable and capable in equal measure, the Prado is a favourite for family adventures, safari drives and everything between.'
   },
   {
     id: 'rav4',
     name: 'Toyota RAV4',
+    shortName: 'RAV4',
     model: 'Adventure · AWD',
     category: 'suv',
     tag: 'City to country',
     passengers: 5,
     transmission: 'Automatic',
     fuel: 'Petrol',
-    price: 14000,
-    image: 'https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1000&q=85',
-    alt: 'Modern SUV parked on a scenic road',
-    description: 'An easygoing, comfortable SUV for a city break, a weekend away or a little of both. Room for your crew and everything you need to bring.'
+    price: 280000,
+    image: 'https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1100&q=85',
+    alt: 'Modern SUV ready for a road trip',
+    description: 'Easy to drive, easy to pack and at home on the city streets or on the way out of town. A versatile companion for a lighter getaway.'
   },
   {
     id: 'noah',
     name: 'Toyota Noah',
+    shortName: 'Noah',
     model: 'Family · Spacious',
     category: 'family',
-    tag: 'Family ready',
+    tag: 'Family favourite',
     passengers: 7,
     transmission: 'Automatic',
     fuel: 'Petrol',
-    price: 12000,
-    image: 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1000&q=85',
-    alt: 'Spacious family vehicle on the road',
-    description: 'A practical, roomy choice for families and small groups. Settle in, stretch out and enjoy an easy ride around town or out of it.'
+    price: 230000,
+    image: 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1100&q=85',
+    alt: 'Comfortable minivan ready for family travel',
+    description: 'Room for the family, the bags and a few extra snacks. The Noah makes airport transfers and family road trips feel relaxed.'
   },
   {
-    id: 'patrol',
+    id: 'nissan-patrol',
     name: 'Nissan Patrol',
-    model: 'Premium · 4x4',
+    shortName: 'Nissan Patrol',
+    model: 'Platinum · 4WD',
     category: 'suv',
-    tag: 'Go anywhere',
+    tag: 'Big adventure',
     passengers: 7,
     transmission: 'Automatic',
     fuel: 'Petrol',
-    price: 30000,
-    image: 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1000&q=85',
-    alt: 'Premium 4x4 for an off-road adventure',
-    description: 'A premium full-size 4x4 that pairs a commanding ride with generous space. A great companion for longer trips and bigger adventures.'
+    price: 700000,
+    image: 'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=1100&q=85&sat=-35',
+    alt: 'Full-size premium 4x4 SUV',
+    description: 'Generous space, a smooth ride and a little extra presence. The Patrol is ready for longer distances and itineraries with room to roam.'
   },
   {
-    id: 'hiace',
+    id: 'toyota-hiace',
     name: 'Toyota Hiace',
-    model: 'Group travel · Van',
+    shortName: 'Hiace',
+    model: 'Tourer · Group travel',
     category: 'van',
-    tag: 'Room for everyone',
+    tag: 'Bring everyone',
     passengers: 12,
     transmission: 'Manual',
     fuel: 'Diesel',
-    price: 18000,
-    image: 'https://images.unsplash.com/photo-1566933293069-b55c7f326dd4?auto=format&fit=crop&w=1000&q=85',
-    alt: 'Passenger van for group travel',
-    description: 'Bring the whole group along. With room for passengers and luggage, the Hiace is a dependable pick for transfers, tours and group trips.'
+    price: 350000,
+    image: 'https://images.unsplash.com/photo-1566933293069-b55c7f326dd4?auto=format&fit=crop&w=1100&q=85',
+    alt: 'Passenger van for group excursions',
+    description: 'Make room for the whole crew. The Hiace is a practical pick for group trips, private tours, transfers and shared adventures.'
   },
   {
-    id: 'escudo',
+    id: 'suzuki-escudo',
     name: 'Suzuki Escudo',
-    model: 'Compact · 4x4',
+    shortName: 'Escudo',
+    model: 'Compact · 4WD',
     category: 'suv',
     tag: 'Easy explorer',
     passengers: 5,
     transmission: 'Automatic',
     fuel: 'Petrol',
-    price: 10000,
-    image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1000&q=85',
-    alt: 'Compact SUV ready for a road trip',
-    description: 'Compact, capable and easy to drive, the Escudo is a great fit for everyday exploring and those scenic detours you did not plan.'
+    price: 240000,
+    image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1100&q=85',
+    alt: 'Compact 4x4 for an easygoing road trip',
+    description: 'A nimble, capable 4×4 for couples, small groups and spontaneous detours. Just the right size for seeing a little more.'
   }
 ];
 
-const money = new Intl.NumberFormat('en-KE', { style: 'currency', currency: 'KES', currencyDisplay: 'code', maximumFractionDigits: 0 });
+const colors = [
+  { name: 'Pearl White', value: '#f1f0eb', light: '#ffffff', dark: '#acada9' },
+  { name: 'Glossy Black', value: '#22272a', light: '#6f7778', dark: '#111416' },
+  { name: 'Metallic Silver', value: '#9da4a5', light: '#e5e8e7', dark: '#60686b' },
+  { name: 'Racing Red', value: '#a93231', light: '#ee6d61', dark: '#762220' },
+  { name: 'Ocean Blue', value: '#315b79', light: '#85aac0', dark: '#18364e' },
+  { name: 'Forest Green', value: '#46634c', light: '#95ab89', dark: '#263c30' },
+  { name: 'Golden Yellow', value: '#d8a931', light: '#f5d774', dark: '#a37418' }
+];
+
+const currency = new Intl.NumberFormat('en-TZ', {
+  style: 'currency',
+  currency: 'TZS',
+  currencyDisplay: 'code',
+  maximumFractionDigits: 0
+});
 const carGrid = document.querySelector('#car-grid');
+const modelSelect = document.querySelector('#custom-model');
 const bookingCar = document.querySelector('#booking-car');
 const bookingForm = document.querySelector('#booking-form');
 const pickupDate = document.querySelector('#pickup-date');
 const returnDate = document.querySelector('#return-date');
-const estimateTotal = document.querySelector('#estimate-total');
+const customCar = document.querySelector('#custom-car');
 const bookingFeedback = document.querySelector('#booking-feedback');
 const contactFeedback = document.querySelector('#contact-feedback');
-const carDialog = document.querySelector('#car-dialog');
+let selectedColor = colors[0];
+let selectedCar = cars[0];
 
 function renderCars(filter = 'all') {
   const visibleCars = filter === 'all' ? cars : cars.filter((car) => car.category === filter);
-  carGrid.innerHTML = visibleCars.map((car) => `
-    <article class="car-card">
-      <div class="car-image-wrap">
-        <img class="car-image" src="${car.image}" alt="${car.alt}" loading="lazy">
-        <span class="car-tag">${car.tag}</span>
-      </div>
-      <div class="car-body">
-        <div class="car-heading">
-          <div><h3>${car.name}</h3><p class="car-subtitle">${car.model}</p></div>
-          <div class="car-price">${money.format(car.price)}<small>per day</small></div>
+  carGrid.innerHTML = visibleCars.map((car) => {
+    const index = String(cars.indexOf(car) + 1).padStart(2, '0');
+    return `
+      <article class="car-card">
+        <div class="car-image-wrap">
+          <img class="car-image" src="${car.image}" alt="${car.alt}" loading="lazy">
+          <span class="car-tag">${car.tag}</span><span class="car-index">${index} / 07</span>
         </div>
-        <div class="car-specs">
-          <span class="car-spec"><span class="spec-icon" aria-hidden="true">♙</span>${car.passengers} passengers</span>
-          <span class="car-spec"><span class="spec-icon" aria-hidden="true">⚙</span>${car.transmission}</span>
-          <span class="car-spec"><span class="spec-icon" aria-hidden="true">◉</span>${car.fuel}</span>
+        <div class="car-body">
+          <div class="car-heading"><div><h3>${car.name}</h3><p class="car-subtitle">${car.model}</p></div><div class="car-price">${currency.format(car.price)}<small>PER DAY</small></div></div>
+          <div class="car-specs"><span class="car-spec"><span class="spec-icon" aria-hidden="true">♙</span>${car.passengers} passengers</span><span class="car-spec"><span class="spec-icon" aria-hidden="true">⚙</span>${car.transmission}</span><span class="car-spec"><span class="spec-icon" aria-hidden="true">◉</span>${car.fuel}</span></div>
+          <div class="car-actions"><button class="details-button" type="button" data-select-car="${car.id}">Customize this car ↗</button><button class="button button-gold select-car-button" type="button" data-select-car="${car.id}">Select this car <span aria-hidden="true">→</span></button></div>
         </div>
-        <div class="car-actions">
-          <button class="details-button" type="button" data-details="${car.id}">View details ↗</button>
-          <a class="button button-primary book-car-button" href="#booking" data-book="${car.id}">Book this car <span aria-hidden="true">→</span></a>
-        </div>
-      </div>
-    </article>
+      </article>`;
+  }).join('');
+}
+
+function renderCarOptions() {
+  const options = cars.map((car) => `<option value="${car.id}">${car.name} — ${currency.format(car.price)}/day</option>`).join('');
+  modelSelect.innerHTML = options;
+  bookingCar.insertAdjacentHTML('beforeend', options);
+  modelSelect.value = selectedCar.id;
+  bookingCar.value = selectedCar.id;
+  syncPassengerOptions();
+}
+
+function renderColorSwatches() {
+  const group = document.querySelector('.color-swatches');
+  group.innerHTML = colors.map((color) => `
+    <button class="swatch-button${color.name === selectedColor.name ? ' is-selected' : ''}" type="button" style="--swatch:${color.value}" aria-label="${color.name}" aria-pressed="${color.name === selectedColor.name}" title="${color.name}" data-color="${color.name}"></button>
   `).join('');
 }
 
-function populateCarOptions() {
-  bookingCar.insertAdjacentHTML('beforeend', cars.map((car) =>
-    `<option value="${car.id}">${car.name} — ${money.format(car.price)}/day</option>`
-  ).join(''));
+function setCarPaint(color) {
+  // Recolor the vector body itself instead of tinting the scenery behind the car.
+  customCar.style.setProperty('--car-paint', color.value);
+  customCar.style.setProperty('--car-paint-light', color.light);
+  customCar.style.setProperty('--car-paint-dark', color.dark);
+  document.querySelector('#paint-light-stop').setAttribute('stop-color', color.light);
+  document.querySelector('#paint-mid-stop').setAttribute('stop-color', color.value);
+  document.querySelector('#paint-dark-stop').setAttribute('stop-color', color.dark);
+  document.querySelector('#selected-color-name').textContent = color.name;
+  document.querySelector('#selected-color-copy').textContent = color.name;
+  document.querySelector('#selected-color-dot').style.setProperty('--swatch-color', color.value);
+  document.querySelector('#booking-color-dot').style.setProperty('--swatch-color', color.value);
+  document.querySelector('#booking-color-label').textContent = color.name;
+  document.querySelector('#booking-color-value').value = color.name;
+  document.querySelectorAll('.swatch-button').forEach((button) => {
+    const active = button.dataset.color === color.name;
+    button.classList.toggle('is-selected', active);
+    button.setAttribute('aria-pressed', String(active));
+  });
+  document.querySelector('#summary-car-color').textContent = `— ${color.name}`;
 }
 
-function showFeedback(element, message, isError = false) {
-  element.textContent = message;
-  element.classList.toggle('is-error', isError);
-  element.classList.add('is-visible');
+function syncPassengerOptions() {
+  const passengerSelect = document.querySelector('#booking-passengers');
+  const previous = Number(passengerSelect.value);
+  passengerSelect.innerHTML = '<option value="" disabled selected>Choose passengers</option>';
+  for (let count = 1; count <= selectedCar.passengers; count += 1) {
+    passengerSelect.insertAdjacentHTML('beforeend', `<option value="${count}">${count} ${count === 1 ? 'passenger' : 'passengers'}</option>`);
+  }
+  if (previous > 0 && previous <= selectedCar.passengers) passengerSelect.value = String(previous);
+  else passengerSelect.value = '';
+}
+
+function updateSelectedCar(carId, { syncBooking = true } = {}) {
+  const car = cars.find((item) => item.id === carId);
+  if (!car) return;
+  selectedCar = car;
+  modelSelect.value = car.id;
+  if (syncBooking) bookingCar.value = car.id;
+  document.querySelector('#custom-car-name').textContent = car.name;
+  document.querySelector('#custom-car-price').innerHTML = `${currency.format(car.price)} <small>/ DAY</small>`;
+  document.querySelector('#preview-model').textContent = car.model.toUpperCase();
+  document.querySelector('#model-count').textContent = `${String(cars.indexOf(car) + 1).padStart(2, '0')} / 07`;
+  document.querySelector('#selected-car-label').textContent = car.shortName;
+  document.querySelector('#car-preview-title').textContent = `${car.name} in ${selectedColor.name}`;
+  document.querySelector('#car-preview-description').textContent = `Illustrated live preview of the ${car.name} with a ${selectedColor.name} body finish.`;
+  customCar.classList.toggle('is-van', car.category === 'van');
+  syncPassengerOptions();
+  setCarPaint(selectedColor);
+  updateBookingSummary();
 }
 
 function getRentalDays() {
   if (!pickupDate.value || !returnDate.value) return 0;
+  // Parse date-only values at local midnight to avoid UTC timezone drift.
   const start = new Date(`${pickupDate.value}T00:00:00`);
   const end = new Date(`${returnDate.value}T00:00:00`);
-  const difference = Math.round((end - start) / 86400000);
-  return Number.isFinite(difference) && difference > 0 ? difference : 0;
+  const days = Math.round((end - start) / 86400000);
+  return Number.isFinite(days) && days > 0 ? days : 0;
 }
 
-function updateEstimate() {
-  const car = cars.find((item) => item.id === bookingCar.value);
+function updateBookingSummary() {
   const days = getRentalDays();
-  estimateTotal.textContent = car && days ? `${money.format(car.price * days)} · ${days} ${days === 1 ? 'day' : 'days'}` : 'Choose a car and dates';
-  return { car, days };
+  const passengerCount = document.querySelector('#booking-passengers').value;
+  document.querySelector('#summary-car-name').textContent = selectedCar.name;
+  document.querySelector('#summary-car-color').textContent = `— ${selectedColor.name}`;
+  document.querySelector('#summary-price').textContent = `${currency.format(selectedCar.price)} / day`;
+  document.querySelector('#summary-days').textContent = days ? `${days} ${days === 1 ? 'DAY' : 'DAYS'} · ${passengerCount || '—'} ${Number(passengerCount) === 1 ? 'PASSENGER' : 'PASSENGERS'}` : 'ADD YOUR DATES';
+  document.querySelector('#summary-total').textContent = days ? currency.format(selectedCar.price * days) : 'TZS —';
+  document.querySelector('#summary-period').textContent = days ? `${pickupDate.value} — ${returnDate.value}` : 'Pick your dates to see total';
 }
 
 function setDateLimits() {
@@ -157,24 +248,15 @@ function setDateLimits() {
   returnDate.min = pickupDate.value || localToday;
 }
 
-function openCarDetails(carId) {
-  const car = cars.find((item) => item.id === carId);
-  if (!car) return;
-  document.querySelector('#dialog-content').innerHTML = `
-    <img class="dialog-image" src="${car.image}" alt="${car.alt}">
-    <div class="dialog-body">
-      <p class="eyebrow">${car.tag}</p>
-      <h2 id="dialog-title">${car.name}</h2>
-      <p>${car.description}</p>
-      <div class="car-specs">
-        <span class="car-spec">${car.passengers} passengers</span>
-        <span class="car-spec">${car.transmission}</span>
-        <span class="car-spec">${car.fuel}</span>
-        <span class="car-spec">${money.format(car.price)} / day</span>
-      </div>
-      <a class="button button-primary dialog-book" href="#booking" data-book="${car.id}">Book this car <span aria-hidden="true">↗</span></a>
-    </div>`;
-  carDialog.showModal();
+function showFeedback(element, message, isError = false) {
+  element.textContent = message;
+  element.classList.toggle('is-error', isError);
+  element.classList.add('is-visible');
+}
+
+function selectCarForJourney(carId) {
+  updateSelectedCar(carId);
+  document.querySelector('#customize').scrollIntoView({ behavior: 'smooth', block: 'center' });
 }
 
 document.querySelector('.fleet-filters').addEventListener('click', (event) => {
@@ -185,75 +267,92 @@ document.querySelector('.fleet-filters').addEventListener('click', (event) => {
 });
 
 document.addEventListener('click', (event) => {
-  const detailsButton = event.target.closest('[data-details]');
-  const bookButton = event.target.closest('[data-book]');
-  if (detailsButton) openCarDetails(detailsButton.dataset.details);
-  if (bookButton) {
-    const car = cars.find((item) => item.id === bookButton.dataset.book);
-    if (car) {
-      bookingCar.value = car.id;
-      updateEstimate();
-      carDialog.close();
-    }
+  const selectButton = event.target.closest('[data-select-car]');
+  const swatch = event.target.closest('[data-color]');
+  const viewButton = event.target.closest('[data-angle]');
+
+  if (selectButton) {
+    selectCarForJourney(selectButton.dataset.selectCar);
+    return;
+  }
+  if (swatch) {
+    selectedColor = colors.find((color) => color.name === swatch.dataset.color) || selectedColor;
+    customCar.classList.add('is-changing');
+    setCarPaint(selectedColor);
+    window.setTimeout(() => customCar.classList.remove('is-changing'), 230);
+    document.querySelector('#car-preview-title').textContent = `${selectedCar.name} in ${selectedColor.name}`;
+    return;
+  }
+  if (viewButton) {
+    const view = viewButton.dataset.angle;
+    customCar.classList.remove('view-side', 'view-rear');
+    if (view !== 'front') customCar.classList.add(`view-${view}`);
+    document.querySelectorAll('.view-button').forEach((button) => {
+      const active = button === viewButton;
+      button.classList.toggle('is-active', active);
+      button.setAttribute('aria-pressed', String(active));
+    });
   }
 });
 
-document.querySelector('.dialog-close').addEventListener('click', () => carDialog.close());
-carDialog.addEventListener('click', (event) => {
-  if (event.target === carDialog) carDialog.close();
-});
-
+modelSelect.addEventListener('change', () => updateSelectedCar(modelSelect.value));
+bookingCar.addEventListener('change', () => updateSelectedCar(bookingCar.value, { syncBooking: false }));
+document.querySelector('#booking-passengers').addEventListener('change', updateBookingSummary);
 pickupDate.addEventListener('change', () => {
-  returnDate.min = pickupDate.value || pickupDate.min;
+  returnDate.min = pickupDate.value || returnDate.min;
   if (returnDate.value && returnDate.value <= pickupDate.value) returnDate.value = '';
-  updateEstimate();
+  updateBookingSummary();
 });
-returnDate.addEventListener('change', updateEstimate);
-bookingCar.addEventListener('change', updateEstimate);
+returnDate.addEventListener('change', updateBookingSummary);
 
 bookingForm.addEventListener('submit', (event) => {
   event.preventDefault();
   bookingFeedback.classList.remove('is-visible', 'is-error');
   if (!bookingForm.reportValidity()) return;
-  const { car, days } = updateEstimate();
-  if (!car || !days) {
-    showFeedback(bookingFeedback, 'Please choose a vehicle and a return date after your pickup date.', true);
+  const days = getRentalDays();
+  if (!days) {
+    showFeedback(bookingFeedback, 'Choose a return date after your pick-up date to see your journey total.', true);
     return;
   }
 
   const formData = new FormData(bookingForm);
   const booking = {
-    id: `SD-${Date.now()}`,
-    name: formData.get('name').trim(),
-    email: formData.get('email').trim(),
-    phone: formData.get('phone').trim(),
-    carId: car.id,
-    carName: car.name,
-    pickupLocation: formData.get('pickupLocation').trim(),
-    dropoffLocation: formData.get('dropoffLocation').trim(),
+    id: `SDTZ-${Date.now()}`,
+    name: String(formData.get('name')).trim(),
+    email: String(formData.get('email')).trim(),
+    phone: String(formData.get('phone')).trim(),
+    carId: selectedCar.id,
+    carName: selectedCar.name,
+    color: selectedColor.name,
+    pickupLocation: String(formData.get('pickupLocation')).trim(),
+    destination: String(formData.get('destination')).trim(),
     pickupDate: formData.get('pickupDate'),
     returnDate: formData.get('returnDate'),
+    passengers: Number(formData.get('passengers')),
     days,
-    total: car.price * days,
-    message: formData.get('message').trim(),
+    dailyRate: selectedCar.price,
+    total: selectedCar.price * days,
+    message: String(formData.get('message')).trim(),
     createdAt: new Date().toISOString()
   };
 
   try {
-    const bookings = JSON.parse(localStorage.getItem('safaridrive-bookings') || '[]');
-    if (!Array.isArray(bookings)) throw new Error('Stored bookings are not in the expected format.');
-    bookings.push(booking);
-    localStorage.setItem('safaridrive-bookings', JSON.stringify(bookings));
+    const saved = JSON.parse(localStorage.getItem('safaridrive-tanzania-bookings') || '[]');
+    if (!Array.isArray(saved)) throw new Error('Stored bookings are not in the expected format.');
+    saved.push(booking);
+    localStorage.setItem('safaridrive-tanzania-bookings', JSON.stringify(saved));
   } catch (error) {
-    console.error('Unable to save SafariDrive booking:', error);
-    showFeedback(bookingFeedback, 'We could not save your booking on this device. Please check your browser storage settings and try again.', true);
+    console.error('Unable to save SafariDrive Tanzania booking:', error);
+    showFeedback(bookingFeedback, 'We could not save this request in your browser. Check your storage settings and try again.', true);
     return;
   }
 
-  showFeedback(bookingFeedback, `Thanks, ${booking.name}! Your ${car.name} request for ${days} ${days === 1 ? 'day' : 'days'} (${money.format(booking.total)}) is saved on this device. This demo does not send bookings to SafariDrive; contact us to confirm availability.`);
+  showFeedback(bookingFeedback, `Thanks, ${booking.name}. Your ${booking.color} ${booking.carName} is requested for ${days} ${days === 1 ? 'day' : 'days'} (${currency.format(booking.total)}). This demo saves locally only; contact our team to confirm availability.`);
   bookingForm.reset();
+  bookingCar.value = selectedCar.id;
+  setCarPaint(selectedColor);
   setDateLimits();
-  updateEstimate();
+  updateBookingSummary();
 });
 
 document.querySelector('#contact-form').addEventListener('submit', (event) => {
@@ -263,24 +362,24 @@ document.querySelector('#contact-form').addEventListener('submit', (event) => {
   if (!form.reportValidity()) return;
   const formData = new FormData(form);
   const message = {
-    name: formData.get('name').trim(),
-    email: formData.get('email').trim(),
-    message: formData.get('message').trim(),
+    name: String(formData.get('name')).trim(),
+    email: String(formData.get('email')).trim(),
+    message: String(formData.get('message')).trim(),
     createdAt: new Date().toISOString()
   };
 
   try {
-    const messages = JSON.parse(localStorage.getItem('safaridrive-messages') || '[]');
-    if (!Array.isArray(messages)) throw new Error('Stored messages are not in the expected format.');
-    messages.push(message);
-    localStorage.setItem('safaridrive-messages', JSON.stringify(messages));
+    const saved = JSON.parse(localStorage.getItem('safaridrive-tanzania-messages') || '[]');
+    if (!Array.isArray(saved)) throw new Error('Stored messages are not in the expected format.');
+    saved.push(message);
+    localStorage.setItem('safaridrive-tanzania-messages', JSON.stringify(saved));
   } catch (error) {
-    console.error('Unable to save SafariDrive contact message:', error);
-    showFeedback(contactFeedback, 'We could not save your message on this device. Please email hello@safaridrive.co.ke instead.', true);
+    console.error('Unable to save SafariDrive Tanzania contact message:', error);
+    showFeedback(contactFeedback, 'We could not save your note in this browser. You can email jambo@safaridrive.co.tz instead.', true);
     return;
   }
 
-  showFeedback(contactFeedback, 'Thanks for reaching out. Your message is saved on this device. This demo does not send messages to SafariDrive; please email us directly.');
+  showFeedback(contactFeedback, 'Thanks for your note. It is saved in this browser demo; nothing is sent to our team. Please email or call us for a reply.');
   form.reset();
 });
 
@@ -305,30 +404,45 @@ navMenu.addEventListener('click', (event) => {
   if (event.target.closest('a')) closeMenu();
 });
 window.addEventListener('resize', () => {
-  if (window.innerWidth > 900) closeMenu();
+  if (window.innerWidth > 980) closeMenu();
 });
 
 const backToTop = document.querySelector('.back-to-top');
 window.addEventListener('scroll', () => {
-  backToTop.classList.toggle('is-visible', window.scrollY > 500);
+  document.querySelector('.site-header').classList.toggle('is-scrolled', window.scrollY > 24);
+  backToTop.classList.toggle('is-visible', window.scrollY > 520);
 }, { passive: true });
 backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
+const heroVideo = document.querySelector('.hero-video');
+heroVideo.addEventListener('error', () => heroVideo.classList.add('is-unavailable'));
+heroVideo.addEventListener('playing', () => heroVideo.classList.remove('is-unavailable'));
+
+function playHeroVideo() {
+  if (document.visibilityState !== 'visible') return;
+  heroVideo.play().catch(() => heroVideo.classList.add('is-unavailable'));
+}
+
+document.addEventListener('visibilitychange', playHeroVideo);
+playHeroVideo();
+
 if ('IntersectionObserver' in window) {
-  const observer = new IntersectionObserver((entries, currentObserver) => {
+  const revealObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add('is-revealed');
-        currentObserver.unobserve(entry.target);
+        observer.unobserve(entry.target);
       }
     });
   }, { threshold: 0.12 });
-  document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
+  document.querySelectorAll('.reveal').forEach((element) => revealObserver.observe(element));
 } else {
   document.querySelectorAll('.reveal').forEach((element) => element.classList.add('is-revealed'));
 }
 
-populateCarOptions();
 renderCars();
+renderCarOptions();
+renderColorSwatches();
+updateSelectedCar(selectedCar.id);
 setDateLimits();
 document.querySelector('#current-year').textContent = new Date().getFullYear();
